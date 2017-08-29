@@ -11,7 +11,7 @@ const robots = [
   { name: 'Ratchet', alliance: null }
 ];
 
-var sortedRobots = robots.map(function (robots) {
+var sortedRobots = robots.map(robot => {
     const badGuys = knownDecepticons.includes(robot.name);
     return Object.assign({}, robot, {
       alliance: badGuys ? 'decepticon' : 'autobot'
