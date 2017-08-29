@@ -12,16 +12,11 @@ const robots = [
 ];
 
 var sortedRobots = robots.map(function (robots) {
-    if knownDecepitons.includes(robot.name);
-      return Object.assign({}, robot, {
-         alliance: 'decepticon',
-  } else {
-    alliance: 'autobot';
-  }
+    const badGuys = knownDecepticons.includes(robot.name);
+    return Object.assign({}, robot, {
+      alliance: badGuys ? 'decepticon' : 'autobot'
+    });
   });
-});
-console.log(sortedRobots);
-
 
 
 
