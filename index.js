@@ -18,7 +18,7 @@ var sortedRobots = robots.map(function (robots) {
   } else {
     alliance: 'autobot';
   }
-  })
+});
 });
 console.log(sortedRobots);
 
